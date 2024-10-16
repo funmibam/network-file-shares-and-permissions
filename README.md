@@ -34,18 +34,17 @@ This Lab involved setting up and testing file share permissions on a Domain Cont
 <img width="611" alt="Screenshot 2024-10-16 142259" src="https://github.com/user-attachments/assets/66f95d58-9aa5-4365-9de4-53e89d174fbf">
 
 
-3. **Share the Folders**  
-   Shared the folders on the network so they could be accessed from **Client-1**.
-
-  <img width="575" alt="Screenshot 2024-10-16 120457" src="https://github.com/user-attachments/assets/ea23f02f-b010-4139-afe7-1c677226f6be">
 
 
 ### 3. Testing File Share Access as a Normal User
+1.  **Share the Folders**  
+      Shared the folders on the network so they could be accessed from **Client-1**.
 
-1. **Log into Client-1 as a Normal User**  
+
+2. **Log into Client-1 as a Normal User**  
    Logged into **Client-1** using a normal user account (e.g., `mydomain\someuser`).
 
-2. **Access the Shared Folders**  
+3. **Access the Shared Folders**  
    From **Client-1**, used **Run (Windows + R)** and typed `\\dc-1` to access the shared folders.  
    Attempted to access each of the folders:
    - **read-access:** Successfully accessed and viewed the contents but could not write to it.
@@ -54,7 +53,8 @@ This Lab involved setting up and testing file share permissions on a Domain Cont
    
    The folder permissions worked as expected based on the configurations.
 
-   ![Screenshot Placeholder: Accessing Shared Folders on Client-1](#)
+   
+  <img width="575" alt="Screenshot 2024-10-16 120457" src="https://github.com/user-attachments/assets/ea23f02f-b010-4139-afe7-1c677226f6be">
 
 ### 4. Creating and Testing the ACCOUNTANTS Security Group
 
@@ -92,4 +92,4 @@ This Lab involved setting up and testing file share permissions on a Domain Cont
 
 
 ## Conclusion
-This project demonstrated how to configure file share permissions in Active Directory and use security groups to control access. The successful creation of a security group, application of permissions, and testing of access rights provided a solid foundation for managing file security within a domain environment.
+This lab demonstrated how to configure file share permissions in Active Directory and use security groups to control access. The successful creation of a security group, application of permissions, and testing of access rights provided a solid foundation for managing file security within a domain environment.
